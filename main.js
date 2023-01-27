@@ -2,10 +2,21 @@ const subtrair = document.querySelector('#subtrair');
 const somar = document.querySelector('#somar');
 const braco = document.querySelector('#braco');
 
-somar.addEventListener('click', (evento) => {
-  braco.value = parseInt(braco.value) +1;
-})
+//Primeiro jeito de fazer. Adicionando evento ao clique e passando o evendo a função anônima.
 
-subtrair.addEventListener('click', (evento) =>{
-  braco.value = parseInt(braco.value) -1;
-})
+// somar.addEventListener('click', (evento) => {
+//   braco.value = parseInt(braco.value) +1;
+// })
+
+// subtrair.addEventListener('click', (evento) =>{
+//   braco.value = parseInt(braco.value) -1;
+// })
+
+//Refatorando o código acima.
+function manipulandoDados(operacao){
+  if(operacao === "subtrair"){
+    braco.value = parseInt(braco.value) -1
+  }else{
+    braco.value = parseInt(braco.value) +1
+  }
+}
