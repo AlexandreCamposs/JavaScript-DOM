@@ -1,16 +1,11 @@
 const subtrair = document.querySelector('#subtrair');
 const somar = document.querySelector('#somar');
 const braco = document.querySelector('#braco');
+const controle = document.querySelectorAll(".controle-ajuste")
+console.log(controle)
 
-//Primeiro jeito de fazer. Adicionando evento ao clique e passando o evendo a função anônima.
-
-// somar.addEventListener('click', (evento) => {
-//   braco.value = parseInt(braco.value) +1;
-// })
-
-// subtrair.addEventListener('click', (evento) =>{
-//   braco.value = parseInt(braco.value) -1;
-// })
+somar.addEventListener('click', () => {manipulandoDados("somar")})
+subtrair.addEventListener('click', () =>{manipulandoDados("subtrair")})
 
 //Refatorando o código acima.
 function manipulandoDados(operacao){
