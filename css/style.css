@@ -33,7 +33,7 @@ main {
     background: url(../img/estrutura.png) no-repeat;
     background-position: center center;
     margin: 0;
-    flex-basis: 40%;
+    flex-basis: 45%;
     position: relative;
 }
 
@@ -230,4 +230,17 @@ main {
         height: 80vh;
         margin: 10vh auto;
     }
+    #robotron{
+        top: -14%;
+        margin-left: 9em;
+        width: 40vw;
+        height: 33%
+    }
+    .box {
+        margin-top: 9em;
+    }
+        .estatisticas {
+            flex-basis: 23%;
+            padding: 3em 3em 0;
+        }
 }
